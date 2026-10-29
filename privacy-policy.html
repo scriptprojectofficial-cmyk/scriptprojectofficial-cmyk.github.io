@@ -1,9 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Без автоперевода: Chrome переводил «Plumplings» как «Сантехника». Русский текст есть ниже — телефон на русском сразу листает к нему. -->
+<meta name="google" content="notranslate">
 <title>Plumplings — Privacy Policy</title>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+	if (!location.hash && /^ru/i.test(navigator.language || "")) location.replace("#ru");
+});
+</script>
 <style>
 	:root { --bg: #fbf7f2; --text: #2b2236; --muted: #6b6276; --accent: #6a3f8f; --line: #e6dccf; }
 	@media (prefers-color-scheme: dark) {
